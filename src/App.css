@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #264653;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(40px + 2vmin);
+  color: white;
+}
+header {
+  position: fixed;
+  left: 0;
+}
+input {
+  font-size: calc(40px + 2vmin);
+  width: 20%;
+  margin: 5%;
+}
+.trunk {
+  color: #b03e0b;
+}
+
+/* .branch {
+  color: #2a9d8f;
+} */
+
+.star > div {
+  color: #e9c46a;
+  font-size: calc(50px + 2vmin);
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* branch colors */
+.tree > .section:nth-child(1n) {
+  color: #2ea496;
+}
+.tree > .section:nth-child(2n) {
+  color: #25887c;
+}
+
+/* tinsel */
+.section > *:nth-child(3n) {
+  color: #acacac;
+}
+.tree > .section:nth-child(2n) > *:nth-child(3n) {
+  color: #e1e1e1;
+}
+
+.section > *:nth-child() {
+  color: #ea3939;
+}
